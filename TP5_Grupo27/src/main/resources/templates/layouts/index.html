@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" tipe="text/css" th:href="@{/css/style.css}" >
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+		<h1>Aqui esta la imagen</h1>
+		<img alt="aqui la imagen" src="C:/Users/Usuario/git/repository4/TP4_Grupo27/src/main/resources/static/images/contactos.jpeg" title="contactos">
+</header>	
+	<nav>
+	<ul>
+		<li><a>Inicio</a></li>
+		<li><a>Agenda</a></li>
+		<li><a>Beneficios y Becas</a></li>
+		<li><a>Contáctos</a></li>
+	</ul>
+	</nav>
+	
+	<form id="formulario ejercicio 4" action="http://www.fi.unju.edu.ar" method="post">
+	<fieldset>
+		<label>Nombre y Apellido:<input type="text" name="usuario" /><br/></label>
+		
+		Provincia:<select name="provincia">
+					<option value="jujuy">Jujuy</option>
+					<option value="cordoba">Cordoba</option>
+					<option value="salta">Salta</option>
+				  </select>
+		<br />
+		<label>Teléfono:<input type="number" name="telefono"/><br /></label>
+		Correo electronico:<input type="email" name="correo"/><br />	
+		
+		Estado Civil<br />
+					<label>Casado:<input type="radio" value="Casado" name="estado"/><br /></label>
+					<label>Soltero<input type="radio" value="Soltero" name="estado"/><br /></label>
+					<label> Otros:<input type="radio" value="Otros" name="estado"/><br /></label>
+		
+		<p>Mensaje: <textarea name="comentario"></textarea></p>
+		<input type="submit" value="Enviar formulario de contacto" />
+	</fieldset>
+	</form>
+	
+	<footer><p>2022.portal de capacitaciones - av. gral. manuel belgrano 789 - tel:(388)999999 S.S. de Jujuy Rep. Argentina</p></footer>
+</body>
+</html>
