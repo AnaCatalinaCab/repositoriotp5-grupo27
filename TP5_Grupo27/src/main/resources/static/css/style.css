@@ -1,4 +1,14 @@
 @charset "ISO-8859-1";
 
 p{
+	text-align: center;
+}
+.margen{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(221, 221, 221, 0.9);
+}
+img{
+display:block;
+margin:auto;
 }
